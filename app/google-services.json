@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "331451353939",
+    "project_id": "beautysalon-279f9",
+    "storage_bucket": "beautysalon-279f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331451353939:android:f8d4636fca15d5e3b06fa6",
+        "android_client_info": {
+          "package_name": "com.claytoneduard.beautysalon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331451353939-bsrgvq0q53bqk921f062jdv78rslqv3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.claytoneduard.beautysalon",
+            "certificate_hash": "a8e25cabb379b3394bb049821a4f8f2862e4002c"
+          }
+        },
+        {
+          "client_id": "331451353939-2t11tf3baced7dn0faojdjhltmm33e4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAzYZlf-k4MiuoSE3UrtOlY3cxYd4631c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "331451353939-2t11tf3baced7dn0faojdjhltmm33e4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
