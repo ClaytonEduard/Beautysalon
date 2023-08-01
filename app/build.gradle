@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -26,6 +27,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    buildFeatures {
+        viewBinding true
+    }
+    buildToolsVersion '33.0.1'
+    ndkVersion '25.1.8937393'
 }
 
 dependencies {
@@ -36,4 +42,26 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    //Firebase
+    implementation(platform("com.google.firebase:firebase-bom:32.2.0"))
+    implementation("com.google.firebase:firebase-analytics")
+
+    //Authentication
+    implementation("com.google.firebase:firebase-auth:22.0.0")
+
+    //Realtime Databese
+    implementation("com.google.firebase:firebase-database:20.2.2")
+
+    // Jitpack io
+    implementation 'com.heinrichreimersoftware:material-intro:1.6'
+
+    // Floating ActionButton
+    implementation 'com.github.clans:fab:1.6.4'
+
+    //Material calendar
+    implementation 'com.github.prolificinteractive:material-calendarview:1.4.3'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+
 }
