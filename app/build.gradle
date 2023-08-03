@@ -55,7 +55,7 @@ dependencies {
     implementation("com.google.firebase:firebase-database:20.2.2")
 
     // Jitpack io
-    implementation 'com.heinrichreimersoftware:material-intro:1.6'
+    implementation 'com.heinrichreimersoftware:material-intro:2.0.0'
 
     // Floating ActionButton
     implementation 'com.github.clans:fab:1.6.4'
