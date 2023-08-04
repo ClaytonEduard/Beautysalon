@@ -2,8 +2,12 @@ package com.claytoneduard.beautysalon;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
+import com.claytoneduard.beautysalon.activity.CadastroActivity;
+import com.claytoneduard.beautysalon.activity.LoginActivity;
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;
 import com.heinrichreimersoftware.materialintro.slide.FragmentSlide;
 import com.heinrichreimersoftware.materialintro.slide.SimpleSlide;
@@ -33,7 +37,21 @@ public class MainActivity extends IntroActivity {
         addSlide(new FragmentSlide.Builder()
                 .background(cor)
                 .fragment(R.layout.intro_4)
+                .build());
+        addSlide(new FragmentSlide.Builder()
+                .background(cor)
+                .fragment(R.layout.intro_cadastro)
                 .canGoForward(true)
                 .build());
     }
+
+    public void btEntrar(View view) {
+        //chamando a activity entrar
+        startActivity(new Intent(this, LoginActivity.class));
+    }
+
+    public void btCadastrar(View view) {
+        startActivity(new Intent(this, CadastroActivity.class));
+    }
+
 }
