@@ -1,4 +1,10 @@
-package com.claytoneduard.beautysalon;
+/*
+ * Copyright (c) 2023
+ * Created by Clayton Eduard
+ * E-mail : clayton_eduard@hotmail.com
+ */
+
+package com.claytoneduard.beautysalon.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +12,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.claytoneduard.beautysalon.R;
 import com.claytoneduard.beautysalon.activity.CadastroActivity;
 import com.claytoneduard.beautysalon.activity.LoginActivity;
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;
