@@ -134,6 +134,7 @@ public class CadastroActivity extends AppCompatActivity {
                                 e.printStackTrace();
                             }
                             Toast.makeText(CadastroActivity.this, excecao, Toast.LENGTH_SHORT).show();
+
                         }
                     }
                 });
