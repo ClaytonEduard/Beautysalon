@@ -1,0 +1,9 @@
+<!--
+  ~ Copyright (c) 2023
+  ~ Created by Clayton Eduard
+  ~ E-mail : clayton_eduard@hotmail.com
+  -->
+
+<resources>
+    <dimen name="fab_margin">200dp</dimen>
+</resources>

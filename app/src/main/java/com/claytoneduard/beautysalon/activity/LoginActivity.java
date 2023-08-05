@@ -31,8 +31,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        campoEmail = findViewById(R.id.editEmail);
-        campoSenha = findViewById(R.id.editSenha);
+        campoEmail = findViewById(R.id.editEmailLogin);
+        campoSenha = findViewById(R.id.editSenhaLogin);
         botaoEntrar = findViewById(R.id.buttonEntrar);
 
         botaoEntrar.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +55,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
     public void validarLogin() {
         autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
         autenticacao.signInWithEmailAndPassword(
@@ -88,7 +89,7 @@ public class LoginActivity extends AppCompatActivity {
 
     // abrir a tela principal
     public void abrirTelaPrincipal() {
-        //startActivity(new Intent(this, PrincipalActivity.class));
-        //finish(); // fechar activity Login;
+        startActivity(new Intent(this, PrincipalActivity.class));
+        finish(); // fechar activity Login;
     }
 }

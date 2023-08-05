@@ -9,13 +9,13 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="123dp"
         android:layout_marginEnd="122dp"
         android:layout_marginBottom="16dp"
         android:text="Crie sua conta grátis"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editNome"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,13 +35,14 @@
         android:ems="10"
         android:hint="Nome"
         android:inputType="textPersonName"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/editTelefone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/editEmail"
+        android:id="@+id/editEmailCadastro"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -52,14 +53,15 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editSenha"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editSenhaCadastro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTelefone" />
 
     <EditText
-        android:id="@+id/editSenha"
+        android:id="@+id/editSenhaCadastro"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -70,10 +72,11 @@
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/editEmailCadastro" />
 
     <TextView
         android:id="@+id/textView7"
@@ -85,7 +88,7 @@
         android:textColor="@android:color/darker_gray"
         app:layout_constraintBottom_toTopOf="@+id/editDataNascimento"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editSenha" />
+        app:layout_constraintTop_toBottomOf="@+id/editSenhaCadastro" />
 
     <TextView
         android:id="@+id/textView8"
@@ -126,6 +129,7 @@
         android:ems="10"
         android:hint="Data Nascimento"
         android:inputType="date"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonCadastrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -143,7 +147,8 @@
         android:ems="10"
         android:hint="Telefone"
         android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/editEmail"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editEmailCadastro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
