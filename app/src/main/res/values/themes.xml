@@ -13,6 +13,34 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <!-- Tema agendar  -->
+    <style name="AgendarTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/agendar_500</item>
+        <item name="colorPrimaryVariant">@color/agendar_700</item>
+        <item name="colorOnPrimary">@android:color/darker_gray</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/agendar_200</item>
+        <item name="colorSecondaryVariant">@color/agendar_teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/agendar_700</item>
+    </style>
+
+    <!-- Tema agendar  -->
+    <style name="CancelarTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/cancelar_500</item>
+        <item name="colorPrimaryVariant">@color/cancelar_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/cancelar_200</item>
+        <item name="colorSecondaryVariant">@color/cancelar_teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/cancelar_700</item>
+    </style>
+
 
     <style name="Theme.BeautySalon.NoActionBar">
         <item name="windowActionBar">false</item>

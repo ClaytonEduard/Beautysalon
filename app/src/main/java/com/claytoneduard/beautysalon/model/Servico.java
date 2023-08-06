@@ -6,24 +6,40 @@
 
 package com.claytoneduard.beautysalon.model;
 
+import com.claytoneduard.beautysalon.config.ConfiguracaoFirebase;
+import com.claytoneduard.beautysalon.helper.Base64Custom;
+import com.claytoneduard.beautysalon.helper.DateCustom;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+
 public class Servico {
-    private int id;
+    private String id;
     private String descricao;
     private double preco;
     private int duracaoMaximaHoras;
 
-    public Servico(int id, String descricao, double preco, int duracaoMaximaHoras) {
-        this.id = id;
-        this.descricao = descricao;
-        this.preco = preco;
-        this.duracaoMaximaHoras = duracaoMaximaHoras;
+    public Servico() {
     }
 
-    public int getId() {
+    // metodo salvar
+    public void salvar(){
+        //recuperar o email do user logado
+        FirebaseAuth auth = ConfiguracaoFirebase.getFirebaseAutenticacao();
+        //captura o user logado
+        String idUsuario = Base64Custom.codificarBase64(auth.getCurrentUser().getEmail());
+        DatabaseReference reference = ConfiguracaoFirebase.getFirebaseDatabase();
+        reference.child("servico")
+                //.child(idUsuario)
+                .push()
+                .setValue(this);
+    }
+
+
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

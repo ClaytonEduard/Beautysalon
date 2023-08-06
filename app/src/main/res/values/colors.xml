@@ -9,4 +9,18 @@
     <color name="white">#FFFFFFFF</color>
 <!--    <color name="base">#f6eddc</color> -->
     <color name="base">#fdc5c9</color>
+
+    <color name="agendar_200">#71dbd2</color>
+    <color name="agendar_500">#eeffdb</color>
+    <color name="agendar_700">#ade4b5</color>
+    <color name="agendar_teal_200">#d0eaa3</color>
+    <color name="agendar_teal_700">#fff18c</color>
+
+
+    <color name="cancelar_200">#bf5c4c</color>
+    <color name="cancelar_500">#a02e26</color>
+    <color name="cancelar_700">#800100</color>
+    <color name="cancelar_teal_200">#df8972</color>
+    <color name="cancelar_teal_700">#ffb698</color>
+
 </resources>

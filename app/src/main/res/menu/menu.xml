@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2023
+  ~ Created by Clayton Eduard
+  ~ E-mail : clayton_eduard@hotmail.com
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuServicos"
+        android:orderInCategory="100"
+        android:title="Cadastrar Serviços"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuSair"
+        android:orderInCategory="200"
+        android:title="Sair"
+        app:showAsAction="never" />
+</menu>

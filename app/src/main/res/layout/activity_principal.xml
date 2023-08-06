@@ -16,7 +16,8 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.BeautySalon.AppBarOverlay">
+        android:theme="@style/Theme.BeautySalon.AppBarOverlay"
+         >
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -50,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="agendar"
-            fab:menu_icon="@drawable/ic_add_white_24dp"
+            android:src="@drawable/ic_add_white_24dp"
             fab:fab_colorNormal="@android:color/holo_green_light"
             fab:fab_label="Agendar"
             fab:fab_size="mini" />
@@ -59,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="cancelar"
-            fab:menu_icon="@drawable/ic_add_white_24dp"
+            android:src="@drawable/ic_add_white_24dp"
             fab:fab_colorNormal="@android:color/holo_red_light"
             fab:fab_label="Cancelar"
             fab:fab_size="mini" />

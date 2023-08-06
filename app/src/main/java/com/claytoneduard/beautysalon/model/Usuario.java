@@ -6,13 +6,16 @@
 
 package com.claytoneduard.beautysalon.model;
 
+import com.claytoneduard.beautysalon.config.ConfiguracaoFirebase;
 import com.claytoneduard.beautysalon.enun.TipoUsuario;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.Exclude;
 
 import java.util.Objects;
 
 
 public class Usuario {
-
+    private String idUsuario;
     private String nome;
     private String telefone;
     private String email;
@@ -21,6 +24,29 @@ public class Usuario {
     private TipoUsuario tipoUsuario;
 
     public Usuario() {
+    }
+
+    // metodo salvar usuario
+    public void salvar(){
+
+        DatabaseReference firebase = ConfiguracaoFirebase.getFirebaseDatabase();
+        firebase.child("usuarios")
+                .child(this.idUsuario)
+                .setValue(this);
+
+    }
+
+
+
+
+
+    @Exclude
+    public String getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(String idUsuario) {
+        this.idUsuario = idUsuario;
     }
 
     public String getNome() {
@@ -47,6 +73,7 @@ public class Usuario {
         this.email = email;
     }
 
+    @Exclude
     public String getSenha() {
         return senha;
     }

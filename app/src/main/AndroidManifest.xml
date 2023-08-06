@@ -12,6 +12,17 @@
         android:theme="@style/Theme.BeautySalon"
         tools:targetApi="31">
         <activity
+            android:name=".activity.ServicoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CancelarActivity"
+            android:exported="false"
+            android:theme="@style/CancelarTheme" />
+        <activity
+            android:name=".activity.AgendarActivity"
+            android:exported="false"
+            android:theme="@style/AgendarTheme" />
+        <activity
             android:name=".activity.PrincipalActivity"
             android:exported="false"
             android:label="@string/title_activity_principal"
