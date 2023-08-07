@@ -26,6 +26,12 @@ public class Usuario {
     public Usuario() {
     }
 
+    public Usuario(String idUsuario, String nome, TipoUsuario tipoUsuario) {
+        this.idUsuario = idUsuario;
+        this.nome = nome;
+        this.tipoUsuario = tipoUsuario;
+    }
+
     // metodo salvar usuario
     public void salvar(){
 
@@ -109,5 +115,10 @@ public class Usuario {
     @Override
     public int hashCode() {
         return Objects.hash(nome, telefone, email, senha);
+    }
+
+    @Override
+    public String toString() {
+        return nome;
     }
 }

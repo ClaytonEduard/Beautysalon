@@ -17,11 +17,11 @@
         <activity
             android:name=".activity.CancelarActivity"
             android:exported="false"
-            android:theme="@style/CancelarTheme" />
+            android:theme="@style/Theme.BeautySalon" />
         <activity
             android:name=".activity.AgendarActivity"
             android:exported="false"
-            android:theme="@style/AgendarTheme" />
+            android:theme="@style/Theme.BeautySalon" />
         <activity
             android:name=".activity.PrincipalActivity"
             android:exported="false"

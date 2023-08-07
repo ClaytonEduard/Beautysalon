@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.claytoneduard.beautysalon.R;
 import com.claytoneduard.beautysalon.config.ConfiguracaoFirebase;
+import com.claytoneduard.beautysalon.enun.TipoUsuario;
 import com.claytoneduard.beautysalon.helper.Base64Custom;
 import com.claytoneduard.beautysalon.model.Usuario;
 import com.claytoneduard.beautysalon.utils.Mask;
@@ -120,6 +121,7 @@ public class CadastroActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             String idUsuario = Base64Custom.codificarBase64(usuario.getEmail());
                             usuario.setIdUsuario(idUsuario);
+                            usuario.setTipoUsuario(TipoUsuario.CLIENTE);
                             usuario.salvar();
                             finish();
                         } else {

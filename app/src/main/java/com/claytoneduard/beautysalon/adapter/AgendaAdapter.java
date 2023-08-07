@@ -14,27 +14,27 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.claytoneduard.beautysalon.R;
-import com.claytoneduard.beautysalon.model.Reserva;
+import com.claytoneduard.beautysalon.model.Agenda;
 
 import java.util.List;
 
-public class ReservaAdapter extends BaseAdapter {
+public class AgendaAdapter extends BaseAdapter {
     private Context context;
-    private List<Reserva> listaReservas;
+    private List<Agenda> listaAgenda;
 
-    public ReservaAdapter(Context context, List<Reserva> listaReservas) {
+    public AgendaAdapter(Context context, List<Agenda> listaAgenda) {
         this.context = context;
-        this.listaReservas = listaReservas;
+        this.listaAgenda = listaAgenda;
     }
 
     @Override
     public int getCount() {
-        return listaReservas.size();
+        return listaAgenda.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return listaReservas.get(position);
+        return listaAgenda.get(position);
     }
 
     @Override
@@ -51,12 +51,12 @@ public class ReservaAdapter extends BaseAdapter {
             view = inflater.inflate(R.layout.lista_item_reserva, null);
         }
 
-        Reserva reserva = listaReservas.get(position);
+        Agenda agenda = listaAgenda.get(position);
 
         TextView textViewHora = view.findViewById(R.id.textViewHora);
-        textViewHora.setText(String.valueOf(reserva.getHora()));
+        textViewHora.setText(String.valueOf(agenda.getHora()));
 
-        if (reserva.isDisponivel()) {
+        if (agenda.isDisponivel()) {
             textViewHora.setTextColor(context.getResources().getColor(android.R.color.black));
         } else {
             textViewHora.setTextColor(context.getResources().getColor(android.R.color.holo_red_light));

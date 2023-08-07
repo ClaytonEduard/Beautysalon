@@ -21,6 +21,13 @@ public class Servico {
     public Servico() {
     }
 
+    public Servico(String id, String descricao, double preco, int duracaoMaximaHoras) {
+        this.id = id;
+        this.descricao = descricao;
+        this.preco = preco;
+        this.duracaoMaximaHoras = duracaoMaximaHoras;
+    }
+
     // metodo salvar
     public void salvar(){
         //recuperar o email do user logado
@@ -65,5 +72,10 @@ public class Servico {
 
     public void setDuracaoMaximaHoras(int duracaoMaximaHoras) {
         this.duracaoMaximaHoras = duracaoMaximaHoras;
+    }
+
+    @Override
+    public String toString() {
+        return descricao;
     }
 }

@@ -9,4 +9,11 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string name="label_select_funcionario">Selecione o Funcionário</string>
+    <string name="label_select_servico">Selecione o Serviço</string>
+    <string name="label_select_date">Selecionar Data</string>
+    <string name="label_select_time">Selecionar Hora</string>
+    <string name="label_save_reservation">Salvar Reserva</string>
 </resources>

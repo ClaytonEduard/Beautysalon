@@ -6,9 +6,7 @@
 
 package com.claytoneduard.beautysalon.model;
 
-import java.time.LocalDateTime;
-
-public class Reserva {
+public class Agenda {
 
     private int id;
     private Usuario funcionario;
@@ -17,12 +15,12 @@ public class Reserva {
     private int hora;
     private boolean disponivel;
 
-    public Reserva(int hora, boolean disponivel) {
+    public Agenda(int hora, boolean disponivel) {
         this.hora = hora;
         this.disponivel = disponivel;
     }
 
-    public Reserva(int id, Usuario funcionario, Usuario cliente, Servico servico, int hora, boolean disponivel) {
+    public Agenda(int id, Usuario funcionario, Usuario cliente, Servico servico, int hora, boolean disponivel) {
         this.id = id;
         this.funcionario = funcionario;
         this.cliente = cliente;
